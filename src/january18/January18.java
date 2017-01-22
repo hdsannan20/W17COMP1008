@@ -16,6 +16,7 @@ public class January18 {
      */
     public static void main(String[] args) {
            System.out.print("Hello git World: my github account is hdsannan20");
+           System.out.println("Github is cool medium of doing coding  teamwork");
             GameOfWar theGame = new GameOfWar();
             theGame.playTheGame();
         
