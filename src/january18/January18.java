@@ -15,7 +15,7 @@ public class January18 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-           System.out.print("Hello git World");
+           System.out.print("Hello git World: my github account is hdsannan20");
             GameOfWar theGame = new GameOfWar();
             theGame.playTheGame();
         
