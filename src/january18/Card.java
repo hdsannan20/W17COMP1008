@@ -22,13 +22,10 @@ public class Card {
     }
     // this method all validate if the null is valid 
         private void setSuit(String suit) {
-            if (suit.equalsIgnoreCase("heart") || suit.equalsIgnoreCase("diamonds") || suit.equalsIgnoreCase("spades") || suit.equalsIgnoreCase("club"))
-            {
-                this.suit=suit;
-
-            }
+            if (suit.equalsIgnoreCase("hearts") || suit.equalsIgnoreCase("diamonds") || suit.equalsIgnoreCase("spades") || suit.equalsIgnoreCase("clubs"))
+                this.suit = suit;
             else 
-                  throw new IllegalArgumentException("suit");
+                  throw new IllegalArgumentException("suit does not match");
             
     }
 
@@ -39,7 +36,10 @@ public class Card {
     public String getSuit() {
         return suit;
     }
-
+  /**
+   * this method return the face value of the card 
+   * @return an INT in the range 2-14
+   */
     public int getFaceValue() {
         return faceValue;
     }

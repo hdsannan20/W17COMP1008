@@ -15,7 +15,10 @@ public class January18 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-            System.out.println("Hello github world");
+           System.out.print("Hello git World");
+            GameOfWar theGame = new GameOfWar();
+            theGame.playTheGame();
+        
     }
     
 }

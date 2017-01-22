@@ -19,6 +19,8 @@ public class DeckOfCards {
     
     public DeckOfCards() 
     {
+        deck = new ArrayList<>();
+        
         String[] suits = {"hearts", "diamonds", "spades", "clubs"};
         String[] faceName = {"two", "three", "four", "five", "six", "seven", "eight","nine", "ten", "eleven", "twelve", "thirteen", "fourteen"}; 
                
@@ -27,7 +29,7 @@ public class DeckOfCards {
         
             for(int i=0;i<faceName.length;i++)
             {
-                  Card newCard = new Card( suit, faceName[i],i+2 );
+                  Card newCard = new Card( faceName[i], suit,i+2 );
             deck.add(newCard);
             }
         
